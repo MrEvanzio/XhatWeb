@@ -1,0 +1,12 @@
+{% extends 'layout/header.html' %}
+{% block content %}
+<h1>Projects</h1>
+
+{% for project in projects %}
+
+<article class="card">
+    <h1>{{project.name}}</h1>
+</article>
+
+{% endfor %}
+{% endblock %}

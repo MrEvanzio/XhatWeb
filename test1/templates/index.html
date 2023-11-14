@@ -1,0 +1,17 @@
+{% extends 'layout/header.html' %}
+
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<head>
+    <title>Inicio</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    
+    <img src="{% static 'nlogo.png' %}" width="80">
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nobis adipisci esse labore ad ex cumque obcaecati similique saepe dolore omnis, facilis maxime quas natus provident reiciendis! Repellendus, expedita illum!</p>
+</body>
+{% endblock %}

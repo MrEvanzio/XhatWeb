@@ -1,0 +1,9 @@
+{% extends 'layout/header.html' %}
+{% block content %}
+<h1>Create a Project</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ forms }}
+        <button>save</button>
+    </form>
+{% endblock %}

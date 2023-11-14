@@ -1,0 +1,34 @@
+body{
+    background: #000000 ;
+    color: whitesmoke;
+}
+
+.navbar {
+    background: #404040;
+    padding: 10px 10px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container {
+    padding: 20px 10px;
+}
+
+.card{
+    padding: 10px 10px;
+    background: #202020;
+    color:red;
+    margin-bottom: 2px;
+}

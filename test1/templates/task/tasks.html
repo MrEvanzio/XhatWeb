@@ -1,0 +1,22 @@
+{% extends 'layout/header.html' %}
+
+{% block content %}
+<h1>Tasks</h1>
+
+{% for task in tasks %}
+
+<div>
+    <h2>{{task.title}}</h2>
+    {% if task.done == True %}
+        <p>Tarea Finalizada</p>
+    {% else %}
+        <p>Tarea Pendiente</p>
+    {% endif %}
+    <p>{{task.description}}</p>
+    <h5>Project: {{task.project.name}}</h5>
+
+    <button>Update</button>
+    <button>Delete</button>
+</div>
+{% endfor %}
+{% endblock %}
